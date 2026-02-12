@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinP App</title>
+    <!-- React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel compiler for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Your React component -->
+    <script type="text/babel" src="FinP_app.jsx"></script>
+    <!-- Mount the component -->
+    <script type="text/babel">
+      ReactDOM.createRoot(document.getElementById("root")).render(
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      );
+    </script>
+  </body>
+</html>
